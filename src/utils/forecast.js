@@ -15,7 +15,9 @@ const forecast = (latitude, longitude, callback) => {
         "It is currently " +
           body.current.temperature +
           " degress out. And it's " +
-          body.current.weather_descriptions
+          body.current.weather_descriptions +
+          ". Local time is: " +
+          body.location.localtime
       );
     }
   });
